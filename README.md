@@ -1,5 +1,7 @@
 # mac-smb-repair
 
+[English README](./README.en.md)
+
 用于 macOS 上一类 SMB 连接卡住问题的保守检测与局部修复工具。
 
 它针对的现象是：服务器重启、网络切换或旧连接异常中断后，Finder 一直显示“正在连接”，而 macOS 的 `NetAuthSysAgent` 可能保留了无法完成的 SMB 挂载请求。
@@ -18,7 +20,7 @@
 
 下载项目后，在 Finder 中双击 [NetAuthSMBRepair.command](./NetAuthSMBRepair.command)。它会打开终端并显示检测结果。
 
-推荐通过 GitHub 项目的 **Code → Download ZIP** 下载完整项目，解压后双击该文件。若 macOS 拦截首次运行，请在 Finder 中按住 Control 点击文件，选择“打开”。
+推荐从 [Releases](../../releases/latest) 下载 `NetAuthSMBRepair.zip`，解压后双击其中的脚本。ZIP 会保留脚本的可执行权限。若 macOS 拦截首次运行，请在 Finder 中按住 Control 点击文件，选择“打开”。
 
 下载脚本后如没有可执行权限，在终端运行：
 
@@ -74,4 +76,4 @@ Finder 通过 macOS 的网络登录组件建立 SMB 连接。服务器重启或�
 
 ## 源码与下载
 
-项目中的 [NetAuthSMBRepair.command](./NetAuthSMBRepair.command) 同时是完整源代码和可双击运行的一键脚本。可在 GitHub 文件页用 **Raw** 下载单文件，或用 **Download ZIP** 下载完整项目。
+项目中的 [NetAuthSMBRepair.command](./NetAuthSMBRepair.command) 同时是完整源代码和可双击运行的一键脚本。可在 [Releases](../../releases/latest) 下载单文件或 ZIP 包，或通过 GitHub 的 **Code → Download ZIP** 下载完整项目。
